@@ -33,10 +33,10 @@
                 &kp K    &kp H    &kp COMMA &kp DOT &kp SLASH
 
                 // Left thumb cluster
-                &mt LSHFT ESC      &lt nav_layer TAB      &lt num_layer SPACE
-
+                &mt(LSHFT, ESC)      &lt(nav_layer, TAB)      &lt(num_layer, SPACE)
+                
                 // Right thumb cluster
-                &mt RGUI RET       &lt sym_layer BSPC    &mt RALT DEL
+                &mt(RGUI, RET)       &lt(sym_layer, BSPC)    &mt(RALT, DEL)
             >;
         };
 
