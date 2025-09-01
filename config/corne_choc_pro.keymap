@@ -28,7 +28,7 @@
                 &kp Z    &kp X    &kp C    &kp D    &kp V    &kp K    &kp H    &kp COMMA &kp DOT &kp SLASH
 
                     &mt LSHFT ESC      &lt 2 TAB      &lt 1 SPACE
-                    &mt RGUI RET       &kp BSPC    &mt RALT DEL
+                    &mt RGUI ENTER       &kp BSPC    &mt RALT DEL
             >;
         };
 
