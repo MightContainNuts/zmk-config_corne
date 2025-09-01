@@ -26,14 +26,15 @@
                 &kp A    &kp R    &kp S    &kp T    &kp G    &kp M    &kp N    &kp E    &kp I    &kp O
                 &kp Z    &kp X    &kp C    &kp D    &kp V    &kp K    &kp H    &kp COMMA &kp DOT &kp SLASH
 
-                // Thumb cluster — default layer
-                &mt LSHFT ESC       // Hold Shift, tap ESC
-                &lt lower_layer TAB  // Hold lower_layer, tap TAB
-                &lt lower_layer SPACE // Hold lower_layer, tap SPACE
+                // Left thumb cluster
+                &mt LSHFT &kp ESC
+                &lt lower_layer &kp TAB
+                &lt lower_layer &kp SPACE
                 
-                &mt RGUI &kp ENTER   // Hold RGUI, tap ENTER
-                &lt raise_layer &kp BSPC // Hold raise_layer, tap BSPC
-                &mt RALT DEL         // Hold RALT, tap DEL
+                // Right thumb cluster
+                &mt RGUI &kp ENTER
+                &lt raise_layer &kp BSPC
+                &mt RALT &kp DEL
             >;
         };
 
