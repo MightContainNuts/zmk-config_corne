@@ -25,7 +25,11 @@
                 &kp Q    &kp W    &kp F    &kp P    &kp B              &kp J    &kp L    &kp U    &kp Y    &kp SQT
                 &kp A    &kp R    &kp S    &kp T    &kp G              &kp M    &kp N    &kp E    &kp I    &kp O
                 &kp Z    &kp X    &kp C    &kp D    &kp V              &kp K    &kp H    &kp COMMA &kp DOT  &kp SLASH
-                                   &mt LSHFT ESC  &mt LCTRL BSPC &lt num_layer SPACE  &lt sym_layer RET
+                                   // Left thumb keys
+                &mt LSHFT ESC    &lt nav_layer TAB    &lt num_layer SPACE
+                
+                // Right thumb keys
+                &mt RGUI RET     &lt sym_layer BSPC   &mt RALT DEL   // or any key 
             >;
         };
 
