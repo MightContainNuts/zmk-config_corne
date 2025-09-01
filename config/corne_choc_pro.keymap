@@ -23,20 +23,11 @@
             display-name = "CASEMEK HE";
             bindings = <
                 // Left hand
-                &kp Q    &kp W    &kp F    &kp P    &kp B
-                &kp A    &kp R    &kp S    &kp T    &kp G
-                &kp Z    &kp X    &kp C    &kp D    &kp V
+                &kp Q    &kp W    &kp F    &kp P    &kp B    &kp J    &kp L    &kp U    &kp Y    &kp SQT
+                &kp A    &kp R    &kp S    &kp T    &kp G    &kp M    &kp N    &kp E    &kp I    &kp O
+                &kp Z    &kp X    &kp C    &kp D    &kp V    &kp K    &kp H    &kp COMMA &kp DOT &kp SLASH
 
-                // Right hand
-                &kp J    &kp L    &kp U    &kp Y    &kp SQT
-                &kp M    &kp N    &kp E    &kp I    &kp O
-                &kp K    &kp H    &kp COMMA &kp DOT &kp SLASH
-
-                // Left thumb cluster
-                &mt(LSHFT, ESC)      &lt(nav_layer, TAB)      &lt(num_layer, SPACE)
-                
-                // Right thumb cluster
-                &mt(RGUI, RET)       &lt(sym_layer, BSPC)    &mt(RALT, DEL)
+                    &mt(LSHFT, ESC)      &lt(nav_layer, TAB)      &lt(num_layer, SPACE) &mt(RGUI, RET)       &lt(sym_layer, BSPC)    &mt(RALT, DEL)
             >;
         };
 
@@ -46,8 +37,7 @@
                 &none &none &none &none &none    &kp HOME &kp PGDN &kp PGUP &kp END &none
                 &none &none &none &none &none    &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
                 &none &none &none &none &none    &none &none &none &none &none
-                &trans &trans
-                &trans &trans &trans &trans
+                &trans    &trans    &trans    &trans    &trans    &trans
             >;
         };
 
@@ -57,8 +47,7 @@
                 &kp 1    &kp 2    &kp 3    &kp 4    &kp 5      &kp 6    &kp 7    &kp 8    &kp 9    &kp 0
                 &none    &none    &none    &none    &none      &none    &none    &kp MINUS &kp EQUAL &none
                 &none    &none    &none    &none    &none      &none    &none    &none    &none &none
-                &trans &trans
-                &trans &trans &trans &trans
+                &trans    &trans    &trans    &trans    &trans    &trans
             >;
         };
 
@@ -70,8 +59,7 @@
                 &kp TILDE &kp PIPE  &kp GRAVE &kp BSLH  &kp UNDER
                 &kp PLUS  &kp LBKT  &kp RBKT  &kp LCBR  &kp RCBR   // <-- curly braces
                 &none &none &none &none &none
-                &trans &trans
-                &trans &trans &trans &trans
+                &trans    &trans    &trans    &trans    &trans    &trans
             >;
         };
     };
