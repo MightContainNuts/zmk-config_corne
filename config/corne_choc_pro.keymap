@@ -26,7 +26,7 @@
                 &kp A    &kp R    &kp S    &kp T    &kp G    &kp M    &kp N    &kp E    &kp I    &kp O
                 &kp Z    &kp X    &kp C    &kp D    &kp V    &kp K    &kp H    &kp COMMA &kp DOT &kp SLASH
 
-                &mt LSHFT ESC)      &lt 1 TAB      &kp SPACE  &mt RGUI ENTER)     &lt 2 BSPC     &kp RALT
+                &mt LSHFT ESC      &lt 1 TAB      &kp SPACE  &mt RGUI ENTER)     &lt 2 BSPC     &kp RALT
             >;
         };
 
