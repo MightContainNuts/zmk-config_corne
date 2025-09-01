@@ -20,48 +20,83 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "CASEMEK";
-bindings = <
-    &kp TAB   &kp Q &kp W &kp F &kp P &kp B &kp C_MUTE &kp C_PP &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
-    &kp LCTRL &kp A &kp R &kp S &kp T &kp G &kp LALT   &kp RALT &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
-    &kp LSHFT &kp Z &kp X &kp C &kp D &kp V                     &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                              &mo 1    &kp LSHIFT  &kp SPACE              &kp RET &kp BSPC    &mo 2 
->;
-
-        lower_layer {
-            display-name = "Numbers";
+            display-name = "CASEMEK HE";
             bindings = <
-                /* Left hand grid */
-                &kp 1 &kp 2 &kp 3 &kp 4 &kp 5
-                &kp 6 &kp 7 &kp 8 &kp 9 &kp 0
-                &kp NO &kp NO &kp NO &kp NO &kp NO
-
-                /* Right hand grid */
-                &kp NO &kp NO &kp NO &kp NO &kp NO
-                &kp NO &kp NO &kp NO &kp NO &kp NO
-                &kp NO &kp NO &kp NO &kp NO &kp NO
-
-                /* Thumb cluster */
-                &kp LCTRL &trans &kp SPACE &kp RET &kp BSPC &kp RALT
+                &kp Q    &kp W    &kp F    &kp P    &kp B              &kp J    &kp L    &kp U    &kp Y    &kp SQT
+                &kp A    &kp R    &kp S    &kp T    &kp G              &kp M    &kp N    &kp E    &kp I    &kp O
+                &kp Z    &kp X    &kp C    &kp D    &kp V              &kp K    &kp H    &kp COMMA &kp DOT  &kp SLASH
+                                   &mt LSHFT ESC  &mt LCTRL BSPC &lt NUM SPACE  &lt SYM RET
             >;
         };
 
-        raise_layer {
+        nav_layer {
+            display-name = "Navigation";
+            bindings = <
+                &none    &none    &none    &none    &none              &kp HOME &kp PGDN  &kp PGUP  &kp END   &none
+                &none    &none    &none    &none    &none              &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
+                &none    &none    &none    &none    &none              &none    &none     &none     &none     &none
+                                   &trans   &trans
+                                   &trans   &trans   &trans   &trans
+            >;
+        };
+
+        num_layer {
+            display-name = "Numbers";
+            bindings = <
+                &kp 1    &kp 2    &kp 3    &kp 4    &kp 5              &kp 6    &kp 7    &kp 8    &kp 9    &kp 0
+                &none    &none    &none    &none    &none              &none    &none    &kp MINUS &kp EQUAL &none
+                &none    &none    &none    &none    &none              &none    &none    &none     &none     &none
+                                   &trans   &trans
+                                   &trans   &trans   &trans   &trans
+            >;
+        };
+
+        sym_layer {
             display-name = "Symbols";
             bindings = <
-                /* Left hand grid */
-                &kp EXCL &kp AT &kp HASH &kp DLLR &kp PERC
-                &kp CIRC &kp AMPS &kp ASTER &kp LPAR &kp RPAR
-                &kp UNDERS &kp PLUS &kp LBRC &kp RBRC &kp PIPE
-
-                /* Right hand grid */
-                &kp TILD &kp GRAVE &kp COLON &kp SCLN &kp QUOTE
-                &kp LT &kp GT &kp COMMA &kp DOT &kp SLASH
-                &kp NO &kp NO &kp NO &kp NO &kp NO
-
-                /* Thumb cluster */
-                &kp LCTRL &trans &kp SPACE &kp RET &kp BSPC &kp RALT
+                &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PERCENT
+                &kp CARET &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR
+                &kp TILDE &kp PIPE  &kp GRAVE &kp BSLH  &kp UNDER
+                &kp PLUS  &kp LBKT  &kp RBKT  &kp LCBR  &kp RCBR   // <-- curly braces
+                &none     &none    &none    &none    &none
+                                   &trans &trans
+                                   &trans &trans &trans &trans
             >;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        // Clipboard
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <15 16>; // A + R
+            bindings = <&kp LC(C)>;
+        };
+
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <16 17>; // R + S
+            bindings = <&kp LC(V)>;
+        };
+
+        combo_cut {
+            timeout-ms = <50>;
+            key-positions = <17 18>; // S + T
+            bindings = <&kp LC(X)>;
+        };
+
+        combo_undo {
+            timeout-ms = <50>;
+            key-positions = <18 19>; // T + G
+            bindings = <&kp LC(Z)>;
+        };
+
+        combo_redo {
+            timeout-ms = <50>;
+            key-positions = <19 20>; // G + M
+            bindings = <&kp LC(Y)>;
         };
     };
 };
