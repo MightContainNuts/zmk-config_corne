@@ -27,7 +27,7 @@
                 &kp Z    &kp X    &kp C    &kp D    &kp V    &kp K    &kp H    &kp COMMA &kp DOT &kp SLASH
 
                 &mt LSHFT ESC      &lt lower_layer TAB      &kp SPACE
-                &kp ENTER     &mt RGUI BSPC      &mt RALT DEL
+                &mt RGUI ENTER     &lt raise_layer BSPC     &mt RALT DEL
             >;
         };
 
